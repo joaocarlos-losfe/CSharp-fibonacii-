@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace fibonacii
 {
@@ -21,8 +18,8 @@ namespace fibonacii
 
             while (fib_seq.Count < maximum_sequence)
             {
-                var last = fib_seq[^2];
-                var previus = fib_seq[^1];
+                var last = fib_seq[^1];
+                var previus = fib_seq[^2];
 
                 fib_seq.Add(last + previus);
             }
